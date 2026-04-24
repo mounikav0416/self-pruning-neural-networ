@@ -1,4 +1,4 @@
-# 🧠 Self-Pruning Neural Network
+# Self-Pruning Neural Network
 
 This project implements a neural network that **learns to prune itself during training** using a differentiable gating mechanism and sparsity regularization.
 
@@ -6,7 +6,7 @@ Instead of removing weights after training, the model dynamically identifies and
 
 ---
 
-## 🚀 Key Idea
+## Key Idea
 
 Each weight is associated with a learnable gate:
 
@@ -19,7 +19,7 @@ This allows the model to optimize both its **weights and structure simultaneousl
 
 ---
 
-## ⚙️ Methodology
+## Methodology
 
 ### 🔹 Prunable Linear Layer
 - Custom linear layer with learnable gate parameters
@@ -46,7 +46,7 @@ This allows the model to optimize both its **weights and structure simultaneousl
 
 ---
 
-## 📊 Results
+## Results
 
 | Lambda | Accuracy | Sparsity |
 |--------|----------|----------|
@@ -54,11 +54,11 @@ This allows the model to optimize both its **weights and structure simultaneousl
 | 1e-4   | 56.60%   | 40.85%   |
 | 1e-3   | 51.05%   | 73.41%   |
 
-👉 **Best trade-off achieved at λ = 1e-4**, where the model improves accuracy while pruning ~40% of weights.
+**Best trade-off achieved at λ = 1e-4**, where the model improves accuracy while pruning ~40% of weights.
 
 ---
 
-## 📈 Visualizations
+## Visualizations
 
 ### 🔹 Sparsity vs Epochs
 - Shows gradual pruning during training
@@ -69,7 +69,7 @@ This allows the model to optimize both its **weights and structure simultaneousl
 
 ---
 
-## 🧠 Key Insights
+## Key Insights
 
 - Neural networks can learn to optimize their own structure during training  
 - L1 regularization effectively drives sparsity  
@@ -78,7 +78,7 @@ This allows the model to optimize both its **weights and structure simultaneousl
 
 ---
 
-## 🛠️ How to Run
+## How to Run
 
 ```bash
 pip install torch torchvision matplotlib
